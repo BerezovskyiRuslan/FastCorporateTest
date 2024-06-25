@@ -1,0 +1,97 @@
+#download { 
+  height: 135px; 
+  width: 160px; 
+  background: #3683F7;
+  position: fixed;
+  z-index: 100;
+  filter: drop-shadow(0 1mm 1mm #3683F7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.download-open {
+  font-family: 'BebasNeue';
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: var(--bg-color-white);
+}
+
+.download-description {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: var(--bg-color-white);
+}
+
+.download-position-chrome {
+  bottom: 140px;
+  left: 12px;
+}
+
+.download-position-firefox {
+  top: 119px;
+  right: 12px;
+}
+.download-chrome::before {
+  top: 135px;
+  border-top: 70px solid #3683F7;
+}
+
+.download-firefox::before {
+  top: -70px;
+  border-bottom: 70px solid #3683F7;
+}
+
+.animated-chrome {
+  animation: wrap-chrome 1.5s linear;
+}
+.animated-firefox {
+  animation: wrap-firefox 1.5s linear;
+}
+
+#download:before {
+content: "";
+height: 0; 
+width: 0;
+position: absolute; 
+left: 0; 
+border-left: 80px solid transparent;
+border-right: 80px solid transparent;
+  z-index: 0;
+}
+
+@keyframes wrap-chrome {
+  0% {
+    transform: translateY(300px);
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes wrap-firefox {
+  0% {
+    transform: translateY(-300px);
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+

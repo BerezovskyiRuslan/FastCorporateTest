@@ -1,0 +1,39 @@
+:root {
+  --width-container: 1139px;
+  --text-color-white: #fff;
+  --text-color-yellow: #FFB800;
+  --bg-color-black: #000;
+  --bg-color-white: #fff;
+  --text-12: 0.75rem;
+  --text-18: 1.125rem;
+  --text-21: 1.313rem;
+  --text-48: 3rem;
+}
+
+@font-face {
+  font-family: 'OpenSens';
+  src: url(../assets/fonts/OpenSens/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(../assets/fonts/BebasNeue/BebasNeue_Bold.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'OpenSens';
+}

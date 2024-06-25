@@ -1,0 +1,23 @@
+main {
+  min-height: calc(100vh - 419px);
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  margin: 0 auto;
+  /* margin-top: 150px; */
+  max-width: var(--width-container);
+}
+
+.content-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'BebasNeue';
+  font-size: var(--text-48);
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
